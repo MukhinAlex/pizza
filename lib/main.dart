@@ -5,6 +5,6 @@ import 'package:pizza/calculator.dart';
 import 'package:pizza/registration.dart';
 
 void main() {
-  runApp(const Registration());
+  runApp(const CalculatorScreen());
 }
 

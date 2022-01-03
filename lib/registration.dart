@@ -23,7 +23,7 @@ class Registration extends StatelessWidget {
             width: double.infinity,
             child: Column(
               children: [
-              SizedBox(height: 60,),
+              const SizedBox(height: 60,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -34,11 +34,11 @@ class Registration extends StatelessWidget {
                     ),
                     child: Icon(Icons.people_rounded, size: 20,),
                   ),
-                  Text('  Регистрация',
+                  const Text('  Регистрация',
                     style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20, color: Color.fromRGBO(0, 0, 0, 0.6)), ),
                 ],
               ),
-              SizedBox(height: 15,),
+              const SizedBox(height: 15,),
               const SizedBox(width: 300,
                 child: Divider(
                   height: 1,
@@ -46,7 +46,7 @@ class Registration extends StatelessWidget {
                   color: Colors.grey,
                 ),
               ),
-              SizedBox(height: 16,),
+              const SizedBox(height: 16,),
               const SizedBox(
                 width: 300,
                 child: Text('Чтобы зарегистрироваться введите свой номер телефона и почту',
