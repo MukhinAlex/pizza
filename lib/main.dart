@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             width: double.infinity,
             child: Column(children: [
               SizedBox(height: 60,),
-              SizedBox(width: 118, height: 84, child: Placeholder(),),
+              const SizedBox(width: 118, height: 84, child: Image(image: AssetImage('assets/dart-logo.png')),),
               SizedBox(height: 20,),
               Text('Введите логин в виде 10 цифр номера телефона',
               style: TextStyle(fontSize: 16, color: Color.fromRGBO(0, 0, 0, 0.6)),),
