@@ -15,10 +15,6 @@ class Registration extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(36)),
         borderSide: BorderSide(
             color: const Color(0xFFeceff1), width: 2));
-    const linkTextStyle = TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-        color: Color(0xFF0079D0));
 
     return MaterialApp(
       home: Scaffold(
