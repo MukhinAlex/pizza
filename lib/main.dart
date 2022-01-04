@@ -7,6 +7,6 @@ import 'app_bar_screen.dart';
 import 'navigation_drawer_screen.dart';
 
 void main() {
-  runApp(const CalculatorScreen());
+  runApp(const AppBarScreen());
 }
 
