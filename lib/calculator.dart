@@ -73,6 +73,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   );
   void _onChangeDoughU(){
     setState(() {
+      _dough = 0;
       _cost = _dough+_sizePrice+_sousPrice+_cheesePrice;
       pressStyleU = onPressStyle;
       pressStyleT = offPressStyle;
