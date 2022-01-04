@@ -34,7 +34,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
             decoration: const BoxDecoration(
               color: Colors.blue,
             ),
-            child: Container(
+            child: SizedBox(
               height: 200,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
