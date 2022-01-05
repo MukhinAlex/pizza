@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListViewUsersApp extends StatelessWidget {
-  final Map<String,String>? myUserList;
-  const ListViewUsersApp({Key? key, this.myUserList}) : super(key: key);
+  const ListViewUsersApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +42,8 @@ class MyListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
-      margin: EdgeInsets.all(5),
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           color: Colors.lightBlueAccent,
           border: Border.all()
