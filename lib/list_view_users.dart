@@ -29,6 +29,12 @@ final List<User> users = <User>[
   User("Дима", "+7 900 234 56 78"),
   User("Дмитрий", "+7 900 234 53 78"),
   User("Сергей", "+7 900 234 53 78"),
+  User("Ольга", "+7 900 254 53 78"),
+  User("Александр", "+7 900 123 45 67"),
+  User("Вера", "+7 900 123 4568"),
+  User("Дима", "+7 900 234 56 78"),
+  User("Дмитрий", "+7 900 234 53 78"),
+  User("Сергей", "+7 900 234 53 78"),
   User("Ольга", "+7 900 254 53 78")
 ];
 
@@ -41,21 +47,24 @@ class MyListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.all(5),
-      decoration: BoxDecoration(
-          color: Colors.lightBlueAccent,
-          border: Border.all()
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("${user[number].name}", style: Theme.of(context).textTheme.headline6),
-          Text("Телефон: ${user[number].phone}", style: Theme.of(context).textTheme.bodyText1)
-        ],
-      )
-  );
+    return InkWell(
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.all(5),
+        decoration: BoxDecoration(
+            color: Colors.lightBlueAccent,
+            border: Border.all()
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("${user[number].name}", style: Theme.of(context).textTheme.headline6),
+            Text("Телефон: ${user[number].phone}", style: Theme.of(context).textTheme.bodyText1)
+          ],
+        )
+  ),
+      onTap: () {},
+    );
     }
 }
 
