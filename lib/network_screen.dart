@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -16,7 +15,7 @@ Future<Post> fetchPost() async {
   } else {
     // If the server did not return a 200 OK response,
     // then throw an exception.
-    throw Exception('Failed to load Post');
+    throw Exception('Ошибка загрузки статьи');
   }
 }
 
@@ -62,13 +61,13 @@ class _NetworkingScreenState extends State<NetworkingScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fetch Data Example',
+      title: 'Json статья',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Fetch Data Example'),
+          title: const Text('Json статья'),
         ),
         body: Center(
           child: FutureBuilder<Post>(
